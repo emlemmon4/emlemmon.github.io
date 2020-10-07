@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Exam Question 4</title>
+<script>
+
+/* Input: 2 inputs from user
+ * Processing: use if statements to determine if both numbers are greater than 5 or if their sum is greater than 20
+ * Output: true or false
+ */
+
+function fives() {
+    let num1 = parseFloat((document.getElementById("one").value));
+    let num2 = parseFloat((document.getElementById("two").value));
+    let message = "False";
+    if ((num1 > 5 && num2 > 5) || num1 + num2 > 20) {
+        message = "True";
+    } document.getElementById("output").innerHTML = message;
+}
+    
+</script>
+</head>
+
+<body>
+Please enter two numbers:
+<input type="number" id="one">
+<input type="number" id="two">
+<button type="button" onclick="fives()">Click</button>
+<div id="output"></div>
+</body>
+</html>
